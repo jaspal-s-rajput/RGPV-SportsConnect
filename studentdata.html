@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Data</title>
+    <link rel="stylesheet" href="studentdata.css">
+    <link rel="icon" href="media/rgpv.ico">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="header.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for Home Icon -->
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">University Student Data</div>
+        <div class="header-right">
+            <a href="admin.html" class="home-icon">
+                <i class="fas fa-home icon"></i>
+                <span>Home</span>
+            </a>
+            <a href="logout.html" class="logout-btn">Logout</a>
+        </div>
+    </header>
+    <div class="navBar">
+        <ul>
+            <a href="admin.html"><li>HOME</li></a>
+          
+            <a href="enents.html"><li>EVENTS</li></a>
+            <a href="affilated.html"><li>AFFILIATED INSTITUTES</li></a>            <a href="adminprofile.html"><li>PROFILE</li></a>
+        </ul>
+    </div>    
+
+    <main class="main-content">
+        <!-- Stat Cards -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <h2>Total Games Participated</h2>
+                <div class="stat-number">5</div>
+            </div>
+            <div class="stat-card">
+                <h2>Single Registrations</h2>
+                <div class="stat-number">1</div>
+            </div>
+            <div class="stat-card">
+                <h2>Team Registrations</h2>
+                <div class="stat-number">4</div>
+            </div>
+            <div class="stat-card">
+                <h2>Total Players</h2>
+                <div class="stat-number">47</div>
+            </div>
+        </section>
+
+        <!-- Table Section -->
+        <section class="table-section">
+            <h1>Student Data for Rustamji Institute of Technology</h1>
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>U12345</td>
+                        <td>John Doe</td>
+                        <td>Computer Science</td>
+                        <td>3rd Year</td>
+                        <td>johndoe@example.com</td>
+                        <td>+91-9876543210</td>
+                    </tr>
+                    <tr>
+                        <td>U67890</td>
+                        <td>Jane Smith</td>
+                        <td>Electrical Engineering</td>
+                        <td>2nd Year</td>
+                        <td>janesmith@example.com</td>
+                        <td>+91-8765432109</td>
+                    </tr>
+                    <tr>
+                        <td>U11223</td>
+                        <td>Raj Kumar</td>
+                        <td>Mechanical Engineering</td>
+                        <td>4th Year</td>
+                        <td>rajkumar@example.com</td>
+                        <td>+91-7654321098</td>
+                    </tr>
+                    <tr>
+                        <td>U44556</td>
+                        <td>Anita Singh</td>
+                        <td>Civil Engineering</td>
+                        <td>1st Year</td>
+                        <td>anitasingh@example.com</td>
+                        <td>+91-6543210987</td>
+                    </tr>
+                    <tr><td>U10001</td><td>Aarav Sharma</td><td>Computer Science</td><td>1st Year</td><td>aarav.sharma@example.com</td><td>+91-9876543101</td></tr>
+                    <tr><td>U10002</td><td>Aditi Verma</td><td>Mechanical Engineering</td><td>2nd Year</td><td>aditi.verma@example.com</td><td>+91-9876543102</td></tr>
+                    <tr><td>U10003</td><td>Akshay Kumar</td><td>Electrical Engineering</td><td>3rd Year</td><td>akshay.kumar@example.com</td><td>+91-9876543103</td></tr>
+                    <tr><td>U10004</td><td>Ananya Gupta</td><td>Civil Engineering</td><td>4th Year</td><td>ananya.gupta@example.com</td><td>+91-9876543104</td></tr>
+                    <tr><td>U10005</td><td>Arjun Mehta</td><td>Information Technology</td><td>1st Year</td><td>arjun.mehta@example.com</td><td>+91-9876543105</td></tr>
+                    <tr><td>U10006</td><td>Bhavya Singh</td><td>Computer Science</td><td>2nd Year</td><td>bhavya.singh@example.com</td><td>+91-9876543106</td></tr>
+                    <tr><td>U10007</td><td>Charu Jain</td><td>Mechanical Engineering</td><td>3rd Year</td><td>charu.jain@example.com</td><td>+91-9876543107</td></tr>
+                    <tr><td>U10008</td><td>Dhruv Kapoor</td><td>Electrical Engineering</td><td>4th Year</td><td>dhruv.kapoor@example.com</td><td>+91-9876543108</td></tr>
+                    <tr><td>U10009</td><td>Esha Desai</td><td>Civil Engineering</td><td>1st Year</td><td>esha.desai@example.com</td><td>+91-9876543109</td></tr>
+                    <tr><td>U10010</td><td>Farhan Ali</td><td>Information Technology</td><td>2nd Year</td><td>farhan.ali@example.com</td><td>+91-9876543110</td></tr>
+                    <tr><td>U10011</td><td>Gaurav Yadav</td><td>Computer Science</td><td>3rd Year</td><td>gaurav.yadav@example.com</td><td>+91-9876543111</td></tr>
+                    <tr><td>U10012</td><td>Harini Iyer</td><td>Mechanical Engineering</td><td>4th Year</td><td>harini.iyer@example.com</td><td>+91-9876543112</td></tr>
+                    <tr><td>U10013</td><td>Ishaan Bhat</td><td>Electrical Engineering</td><td>1st Year</td><td>ishaan.bhat@example.com</td><td>+91-9876543113</td></tr>
+                    <tr><td>U10014</td><td>Jiya Patel</td><td>Civil Engineering</td><td>2nd Year</td><td>jiya.patel@example.com</td><td>+91-9876543114</td></tr>
+                    <tr><td>U10015</td><td>Kartik Joshi</td><td>Information Technology</td><td>3rd Year</td><td>kartik.joshi@example.com</td><td>+91-9876543115</td></tr>
+                    <tr><td>U10016</td><td>Lavanya Reddy</td><td>Computer Science</td><td>4th Year</td><td>lavanya.reddy@example.com</td><td>+91-9876543116</td></tr>
+                    <tr><td>U10017</td><td>Manish Sahu</td><td>Mechanical Engineering</td><td>1st Year</td><td>manish.sahu@example.com</td><td>+91-9876543117</td></tr>
+                    <tr><td>U10018</td><td>Nandini Roy</td><td>Electrical Engineering</td><td>2nd Year</td><td>nandini.roy@example.com</td><td>+91-9876543118</td></tr>
+                    <tr><td>U10019</td><td>Om Prakash</td><td>Civil Engineering</td><td>3rd Year</td><td>om.prakash@example.com</td><td>+91-9876543119</td></tr>
+                    <tr><td>U10020</td><td>Priya Kulkarni</td><td>Information Technology</td><td>4th Year</td><td>priya.kulkarni@example.com</td><td>+91-9876543120</td></tr>
+                    <tr><td>U10021</td><td>Rahul Chawla</td><td>Computer Science</td><td>1st Year</td><td>rahul.chawla@example.com</td><td>+91-9876543121</td></tr>
+                    <tr><td>U10022</td><td>Sakshi Menon</td><td>Mechanical Engineering</td><td>2nd Year</td><td>sakshi.menon@example.com</td><td>+91-9876543122</td></tr>
+                    <tr><td>U10023</td><td>Tanmay Verma</td><td>Electrical Engineering</td><td>3rd Year</td><td>tanmay.verma@example.com</td><td>+91-9876543123</td></tr>
+                    <tr><td>U10024</td><td>Usha Bansal</td><td>Civil Engineering</td><td>4th Year</td><td>usha.bansal@example.com</td><td>+91-9876543124</td></tr>
+                    <tr><td>U10025</td><td>Varun Khanna</td><td>Information Technology</td><td>1st Year</td><td>varun.khanna@example.com</td><td>+91-9876543125</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 University Data Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

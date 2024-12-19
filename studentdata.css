@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.nav a.logout {
+    background-color: #e63946;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stat Cards */
+.stats-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.stat-card {
+    background-color: #444;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.stat-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Table Section */
+.table-section {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 90%;
+}
+
+.table-section h1 {
+    text-align: center;
+    color: #f4f4f9;
+    margin-bottom: 1rem;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.student-table thead {
+    background-color: #444;
+    color: white;
+}
+
+.student-table th, .student-table td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+.student-table tbody tr:nth-child(even) {
+    background-color: #746565;
+}
+
+.student-table tbody tr:nth-child(odd) {
+    background-color: #837d7d;
+}
+
+.student-table tbody tr:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1c1c1c;
+    color: white;
+    margin-top: 2rem;
+}

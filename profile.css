@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(194, 194, 194); 
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgb(58, 58, 59); 
+    color: rgb(194, 194, 194); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.nav a.logout {
+    background-color: #e63946;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgb(13, 11, 11); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.profile-card {
+    display: inline-block;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: rgb(58, 58, 59); 
+    color: rgb(244, 238, 238); 
+    border: none
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.profile-role {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-contact {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+/* Stats Section */
+.stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.stats-card {
+    color: rgb(194, 194, 194); 
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stats-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004080;
+}
+
+/* Actions Section */
+.actions-section {
+    text-align: center;
+    margin: 2rem;
+}
+
+.action-buttons button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-buttons button:hover {
+    background-color: #002d59;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content p {
+    margin: 0;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

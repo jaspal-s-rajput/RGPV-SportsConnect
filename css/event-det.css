@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* CONTENT SECTION */
+.content{
+    padding: 20px;
+    background-color: #000000;
+}
+/* Carousel Styling */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background: #f4f4f4;
+    box-shadow: black 0px 0px 30px inset;
+    border-radius: 5px;
+}
+
+.carousel-slide {
+    display: flex;
+    padding: 30px;
+    align-items: end;
+    height: 100%;
+    color: #fff;
+    text-align: left;    
+}
+
+.carousel-content h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.938);
+}
+.carousel-content h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffffff;
+    border-bottom: 2px solid #ddd;
+    text-shadow: 0 0 10px rgb(181, 27, 27);
+    padding: 0px 0px 20px 0px;
+}
+
+.carousel-content p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Section Styling */
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #d4d4d4;
+    border-bottom: 2px solid brown;
+    padding-bottom: 10px;
+    
+}
+
+.event-description,
+.event-sport-details,
+.venue-details,
+.event-timeline{
+    padding: 15px;
+    margin-top: 30px;
+    height: fit-content;
+    background: #5d5c5c44;
+    border-radius: 0px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.event-description .link a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: brown;
+    color: #f4f4f4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}.event-description .link a:hover{
+    background-color: #f4f4f4;
+    color: brown;
+    box-shadow: #ddd 0 0 5px;
+}
+
+.tag {
+    background-color: brown;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.event-description p,
+.venue-details p {
+    line-height: 1.3;
+    padding: 10px 0;
+    text-align: justify;
+    color: #ddd;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.event-sport-details ul,
+.awards li,
+.event-timeline ul {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.event-sport-details li,
+.awards li,
+.event-timeline li {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.awards{
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    height: fit-content;
+    background: #5d5c5c44;
+    border-radius: 0px;
+
+}
+
+.event-timeline li strong {
+    font-weight: bold;
+}

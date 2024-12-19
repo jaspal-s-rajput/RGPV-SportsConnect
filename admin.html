@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+        <!-- BootStrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <!-- BootStrap -->
+    
+            <!-- HINDI -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Yatra+One&display=swap" rel="stylesheet">
+            <!-- HINDI -->
+            
+          <link rel="icon" href="media/rgpv.ico">
+        <title>RGPV - SC | Administrator</title>
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="merit.css">
+    
+    </head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="topRgpv" href="https://www.rgpv.ac.in/Index.aspx"><h3  style="color:rgb(195, 0, 0); cursor:pointer; font-size: 20px; font-weight: 600;">RGPV |</h3></a>
+        <ul>
+            <a href="https://www.rgpv.ac.in/AboutRGTU/rgpv_collaboration.aspx"><li>Collaboration</li></a>
+            <a href="https://www.rgpv.ac.in/campus/rti17.pdf"><li>RTI</li></a>
+             <form>  
+              <select class="lang" name="lang">
+                  <option value="option1">English</option>
+                  <option value="option2">Hindi</option>
+              </select>
+            </form> 
+            <a href="adminprofile.html"><li class="signup">Admin</li></a>
+        </ul>
+    </div>
+    <div class="monoBar">
+        <a href="https://sportsauthorityofindia.nic.in/sai/"><img class="orgLogo" src="media/logo/saiLogo.png" alt="Sai-India"/></a>
+        <a href="https://kheloindia.gov.in/"><img class="orgLogo" src="media/logo/kheloIndia.png" alt="Khelo-India"/></a>
+        <a href="https://fitindia.gov.in/home"><img class="orgLogo" src="media/logo/fitInda.png" alt="Sai-India"/></a>
+        <a href="admin.html"><img class="Logo" src="media/logo/spLogo.png" alt="RGPV - SPORTS CONNECT"/></a>
+        <a href="https://aiu.ac.in/"><img class="orgLogo" src="media/logo/Aiu.png" alt="AIU"/></a>
+        <a href="https://olympic.ind.in/"><img class="orgLogo" style="width: 110px;" src="media/logo/ioa.png" alt="IOA"/></a>
+        <a href="https://indiaat75.nic.in/"><img class="orgLogo" src="media/logo/azadiMohotsav.png" alt="75-Aazadi-Mohotsav"/></a>
+    </div>
+     <div class="navBar">
+        <ul>
+            <a href="admin.html"><li>HOME</li></a>
+            <a href="enents.html"><li>RGPV - EVENTS SCHEDULE</li></a>
+           <a href="affilated.html"><li>RGPV - AFFILIATED INSTITUTES</li></a>
+            <a href="adminprofile.html"><li>ADMINISTRATOR DASHBOARD</li></a>
+        </ul>
+    </div>    
+    <!-- MAIN Events -->
+    
+     <!-- MEDALS -->
+     <div class="medal">
+        <div class="medal-one">
+            <h2>TOP <span style="color: brown;">10</span> TRIUMPHS OF RECENT EVENT</h2>
+          </div>
+        <div>
+          <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>University Teams</th>
+                    <th>🥇 Gold</th>
+                    <th>🥈 Silver</th>
+                    <th>🥉 Bronze</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td>1</td>
+                    <td><img src="media/colleges/rustamji-college.webp" alt="mono"  class="flag"> <a href="https://rjit.ac.in/" class="link"> Rustamji Institute of Technology</a></td>
+                    <td class="medal-count">32</td>
+                    <td class="medal-count">22</td>
+                    <td class="medal-count">19</td>
+                    <td class="medal-count">20</td>   
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td>2</td>
+                    <td><img src="media/colleges/Aitr.jpg" alt="mono" class="flag"> <a href="https://aitr.ac.in/" class="link">Acropolis Institute of Technology & Research</a></td>
+                    <td class="medal-count">34</td>
+                    <td class="medal-count">6</td>
+                    <td class="medal-count">24</td>
+                    <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                  <td>3</td>
+                  <td><img src="media/colleges/maharana-gwalior.jpeg" alt="mono" class="flag"> <a href="http://www.mpct.org/technology-home.html" class="link">Maharana Pratap College of Technology</a> </td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">2</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                  <td>4</td>
+                  <td><img src="media/colleges/aurobindo-pharma.png" alt="mono" class="flag"> <a href="https://www.saip.ac.in/" class="link">Sri Aurobindo Institute of Pharmacy</a></td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">6</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 5 -->
+                <tr>
+                  <td>5</td>
+                  <td><img src="media/colleges/mahakal-institute.jpg" alt="mono" class="flag"> <a href="https://mitujjain.ac.in/" class="link">Mahakal Institute of Technology & Management</a></td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">7</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 6 -->
+                <tr>
+                  <td>6</td>
+                  <td><img src="media/colleges/lnct.png" alt="mono" class="flag"> <a href="https://lnct.ac.in/" class="link">Lakshmi Narain College of Technology</a> </td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">9</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 7 -->
+                <tr>
+                  <td>7</td>
+                  <td><img src="media/colleges/pimer.jpeg" alt="mono" class="flag"> <a href="https://piemr.edu.in/" class="link">Prestige Institute of Management & Research</a> </td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">8</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 8 -->
+                <tr>
+                  <td>8</td>
+                  <td><img src="media/colleges/oriental-indore.png" alt="mono" class="flag"> <a href="https://oriental.ac.in/" class="link">Oriental Institute of Science and Technology</a> </td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">88</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 9 -->
+                <tr>
+                    <td>9</td>
+                    <td><img src="media/colleges/malwa-inst.png" alt="mono" class="flag"> <a href="https://mistindore.com/" class="link">Malwa Institute of Science and Technology</a></td>
+                    <td class="medal-count">34</td>
+                    <td class="medal-count">5</td>
+                    <td class="medal-count">24</td>
+                    <td class="medal-count">17</td> 
+                </tr>
+                <!-- Row 10 -->
+                <tr>
+                  <td>10</td>
+                  <td><img src="media/colleges/ujjain-engg.jpeg" alt="mono" class="flag"> <a href="https://uecu.ac.in/" class="link">Ujjain Engineering College</a></td>
+                  <td class="medal-count">34</td>
+                  <td class="medal-count">15</td>
+                  <td class="medal-count">24</td>
+                  <td class="medal-count">17</td> 
+              </tr>
+              </tbody>
+          </table>
+          </div>
+    </div>
+
+   
+    
+    <div id="main-merit">
+        <!--Boys PLAYERS -->
+        <div class="boy-merit">
+
+            <div class="boy-merit-para" style="margin-right: 50px;">
+                <h2>Outstanding <span style="color: brown;">Male Contenders</span> in Sports</h2>
+            </div>
+
+            <table id="merit-boy-table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Sports</th>
+                        <th>Team</th>
+                        <th>City</th>
+                        <th>Performance</th>
+                        <th>🥇 Gold</th>
+                    <th>🥈 Silver</th>
+                    <th>🥉 Bronze</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td><img src="media/candidates/jaspal.png" alt="-"  class="flag" onclick="openPopup('media/candidates/jaspal.png')"> Jaspal Singh Rajput</td>
+                        <td>Chess</td>
+                        <td>CDGI</td>
+                        <td>Indore</td>
+                        <td>ELO: 1826</td>
+                        <td>7</td> 
+                        <td>6</td> 
+                        <td>9</td>   
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td><img src="media/candidates/mayank.png" alt="-"  class="flag" onclick="openPopup('media/candidates/mayank.png')"> Mayank Kumrawat</td>
+                        <td>Archery</td>
+                        <td>RJIT</td>
+                        <td>Gwalior</td>
+                        <td>Avg. Score: 580</td>
+                        <td>7</td> 
+                        <td>6</td> 
+                        <td>8</td>  
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td><img src="media/candidates/amit.png" alt="-"  class="flag" onclick="openPopup('media/candidates/amit.png')"> Amit Braj</td>
+                        <td>Handball</td>
+                        <td>UEC</td>
+                        <td>Ujjain</td>
+                        <td>Avg Goals: 5/game, Blocks: 3/game</td>
+                        <td>7</td> 
+                        <td>6</td> 
+                        <td>8</td>  
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                        <td><img src="media/candidates/aryan.png" alt="-"  class="flag" onclick="openPopup('media/candidates/aryan.png')"> Aryan Patel</td>
+                        <td>Basketball</td>
+                        <td>LNCT</td>
+                        <td>Bhopal</td>
+                        <td>4/Game-Avg. Point</td>
+                        <td>7</td> 
+                        <td>5</td> 
+                        <td>6</td>  
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/5.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/5.png')"> Shiva Subrmanyam </td>
+                        <td>Shooting</td>
+                        <td>OIST</td>
+                        <td>Indore</td>
+                        <td>Avg Score: 580</td>
+                        <td>6</td> 
+                        <td>5</td> 
+                        <td>4</td>   
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/6.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/6.png')"> K.N. Brahamanan </td>
+                        <td>Football</td>
+                        <td>LNCT</td>
+                        <td>Indore</td>
+                        <td>Goals: 15, Assists: 10</td>
+                        <td>5</td> 
+                        <td>6</td> 
+                        <td>9</td>  
+                    </tr>
+                    <!-- Row 7 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/7.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/7.png')"> Vishnu Gopal Iyer </td>
+                        <td>Tennis</td>
+                        <td>SSCT</td>
+                        <td>Sehore</td>
+                        <td>Win/Loss Ratio: 18/5</td>
+                        <td>3</td> 
+                        <td>8</td> 
+                        <td>3</td>  
+                    </tr>
+                    <!-- Row 8 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/8.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/8.png')"> Surya Pratap Singh </td>
+                        <td>Cricket</td>
+                        <td>SATI</td>
+                        <td>Vidisha</td>
+                        <td>Wickets: 30, Economy: 4.2</td>
+                        <td>2</td> 
+                        <td>9</td> 
+                        <td>11</td>  
+                    </tr>
+                    <!-- Row 9 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/9.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/9.png')"> Jagdambh Singh </td>
+                        <td>Archery</td>
+                        <td>RES</td>
+                        <td>Rewa</td>
+                        <td>Avg. Score: 542</td>
+                        <td>4</td> 
+                        <td>2</td> 
+                        <td>11</td>   
+                    </tr>
+                    <!-- Row 10 -->
+                    <tr>
+                        <td><img src="media/candidates/boys/10.png" alt="-"  class="flag" onclick="openPopup('media/candidates/boys/10.png')"> Balram Singh </td>
+                        <td>Cricket</td>
+                        <td>MPCT</td>
+                        <td>Gwalior</td>
+                        <td>Runs: 750</td>
+                        <td>2</td> 
+                        <td>5</td> 
+                        <td>3</td>  
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Popup container -->
+            <div id="imagePopup" class="popup">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <img class="popup-content" alt="Player-Profile" id="popupImage">
+            </div>
+            <script>
+                // Function to open the popup and set the image source
+                function openPopup(src) {
+                    document.getElementById("popupImage").src = src;
+                    document.getElementById("imagePopup").style.display = "block";
+                    document.getElementById("playerName").src = src;
+                    document.getElementById("imagePopup").style.display = "block";
+
+                }
+            
+                // Function to close the popup
+                function closePopup() {
+                    document.getElementById("imagePopup").style.display = "none";
+                }
+            </script>
+        </div>
+            <h3 style="text-align: center; font-family: 'Yatra One', system-ui; font-weight: 900; font-size: 15px; color: brown; text-shadow: 0px 0px 5px black;">|| Note: Click icon to view the Player's Image ||</h3>
+        <!--Girls PLAYERS -->
+        <div class="boy-merit">
+        
+                <table id="merit-boy-table" style="margin-right: 50px;">
+                    <thead>
+                        <tr>
+                            <th>Players</th>
+                            <th>Sports</th>
+                            <th>Team</th>
+                            <th>City</th>
+                            <th>Performance</th>
+                            <th>🥇 Gold</th>
+                            <th>🥈 Silver</th>
+                            <th>🥉 Bronze</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/1.webp" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/1.webp')"> Aaradhya Pandey</td>
+                            <td>Chess</td>
+                            <td>RJIT</td>
+                            <td>Gwalior</td>
+                            <td>ELO: 1856</td>
+                            <td>13</td> 
+                            <td>6</td> 
+                            <td>9</td>   
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/2.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/2.avif')"> Rukmani Singh</td>
+                            <td>Archery</td>
+                            <td>OIST</td>
+                            <td>Jabalpur</td>
+                            <td>Avg. Score: 620</td>
+                            <td>13</td> 
+                            <td>6</td> 
+                            <td>9</td>  
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/3.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/3.avif')"> Kisna Kumari</td>
+                            <td>Handball</td>
+                            <td>SATI</td>
+                            <td>Vidisha</td>
+                            <td>Avg Goals: 7/game, Blocks: 4/game</td>
+                            <td>13</td> 
+                            <td>6</td> 
+                            <td>9</td>  
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/4.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/4.avif')"> Devi K. Chouhan</td>
+                            <td>Basketball</td>
+                            <td>LNCT</td>
+                            <td>Indore</td>
+                            <td>6/Game-Avg. Point</td>
+                            <td>11</td> 
+                            <td>6</td> 
+                            <td>8</td>  
+                        </tr>
+                        <!-- Row 5 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/5.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/5.avif')"> Gayatri Bhavani </td>
+                            <td>Shooting</td>
+                            <td>MIT</td>
+                            <td>Indore</td>
+                            <td>Avg Score: 590</td>
+                            <td>11</td> 
+                            <td>5</td> 
+                            <td>8</td>   
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/6.png" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/6.png')"> Ramana S.K. </td>
+                            <td>Football</td>
+                            <td>SSCT</td>
+                            <td>Sehore</td>
+                            <td>Goals: 18, Assists: 15S</td>
+                            <td>9</td> 
+                            <td>10</td> 
+                            <td>5</td>  
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/7.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/7.avif')">Saraswati Iyengar </td>
+                            <td>Tennis</td>
+                            <td>SRIT</td>
+                            <td>Bhopal</td>
+                            <td>Win/Loss Ratio: 18/5</td>
+                            <td>6</td> 
+                            <td>16</td> 
+                            <td>3</td>  
+                        </tr>
+                        <!-- Row 8 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/8.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/8.avif')"> Parwati Singh </td>
+                            <td>Cricket</td>
+                            <td>MIT</td>
+                            <td>Indore</td>
+                            <td>Wickets: 39, Economy: 4.8</td>
+                            <td>7</td> 
+                            <td>7</td> 
+                            <td>7</td>  
+                        </tr>
+                        <!-- Row 9 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/9.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/9.avif')"> Lakshmi Rajawat </td>
+                            <td>Archery</td>
+                            <td>MPCT</td>
+                            <td>Gwalior</td>
+                            <td>Avg. Score: 442</td>
+                            <td>7</td> 
+                            <td>6</td> 
+                            <td>6</td>   
+                        </tr>
+                        <!-- Row 10 -->
+                        <tr>
+                            <td><img src="media/candidates/girls/10.avif" alt="-"  class="flag" onclick="openPopup('media/candidates/girls/10.avif')"> Anamika Chandel </td>
+                            <td>Cricket</td>
+                            <td>AITR</td>
+                            <td>Indore</td>
+                            <td>Runs: 750</td>
+                            <td>6</td> 
+                            <td>8</td> 
+                            <td>3</td>  
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="boy-merit-para">
+                    <h2>Outstanding <span style="color: brown;">Female Contenders</span> in Sports</h2>
+                </div>
+        
+                <!-- Popup container -->
+                <div id="imagePopup" class="popup">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <img class="popup-content" alt="Player-Profile" id="popupImage">
+                </div>
+                <script>
+                    // Function to open the popup and set the image source
+                    function openPopup(src) {
+                        document.getElementById("popupImage").src = src;
+                        document.getElementById("imagePopup").style.display = "block";       
+                    }
+                
+                    // Function to close the popup
+                    function closePopup() {
+                        document.getElementById("imagePopup").style.display = "none";
+                    }
+                </script>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RGPV SportsConnect. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script/events.js"></script>
+</body>
+</html>

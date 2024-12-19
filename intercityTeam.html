@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+
+    <!-- HINDI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Yatra+One&display=swap" rel="stylesheet">
+    <!-- HINDI -->
+    <link rel="icon" href="../../../Main/media/rgpv.ico">
+    <title>RGPV - SC INDB | Inter-City</title>
+    <link rel="stylesheet" href="css/event-det.css">
+    <link rel="stylesheet" href="header.css">
+
+    <style>
+        .event-description table{
+            border: 5px solid grey;
+            text-align: left;
+            color: aliceblue;
+        }
+        .event-description table th{
+            color: black;
+            background-color: rgb(131, 131, 131);
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 0 0  2px black;
+        }
+        .event-description table th,td{
+            padding: 10px 45.8px;
+            font-weight: 500;
+            border: 2px grey solid;
+        }
+        .event-description table td button{
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+
+
+        .event-sport-details table{
+            border: 5px solid grey;
+            text-align: left;
+            color: aliceblue;
+        }
+        .event-sport-details table th{
+            color: black;
+            background-color: rgb(131, 131, 131);
+            font-weight: 900;
+            text-align: center;
+            text-shadow: 0 0  2px black;
+        }
+        .event-sport-details table th,td{
+            padding: 10px 45.8px;
+            font-weight: 500;
+            border: 2px grey solid;
+        }
+        .event-sport-details table td button{
+            font-weight: 500;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+        <!-- Navigation Bar -->
+        <div class="topnav">
+            <a class="topRgpv" href="https://www.rgpv.ac.in/Index.aspx"><h3  style="color:rgb(195, 0, 0); cursor:pointer; font-size: 20px; font-weight: 600;">RGPV |</h3></a>
+            <ul>
+                <a href="https://www.rgpv.ac.in/AboutRGTU/rgpv_collaboration.aspx"><li>Collaboration</li></a>
+                <a href="https://www.rgpv.ac.in/campus/rti17.pdf"><li>RTI</li></a>
+                 <form>  
+                  <select class="lang" name="lang">
+                      <option value="option1">English</option>
+                      <option value="option2">Hindi</option>
+                  </select>
+                </form> 
+                <a href="indb_Dashboard.html"><li class="signup">Indore Nodal</li></a>
+            </ul>
+        </div>
+        <div class="monoBar">
+            <a href="https://sportsauthorityofindia.nic.in/sai/"><img class="orgLogo" src="media/logo/saiLogo.png" alt="Sai-India"/></a>
+            <a href="https://kheloindia.gov.in/"><img class="orgLogo" src="media/logo/kheloIndia.png" alt="Khelo-India"/></a>
+            <a href="https://fitindia.gov.in/home"><img class="orgLogo" src="media/logo/fitInda.png" alt="Sai-India"/></a>
+            <a href="indoreHome.html"><img class="Logo" src="media/logo/spLogo.png" alt="RGPV - SPORTS CONNECT"/></a>
+            <a href="https://aiu.ac.in/"><img class="orgLogo" src="media/logo/Aiu.png" alt="AIU"/></a>
+            <a href="https://olympic.ind.in/"><img class="orgLogo" style="width: 110px;" src="media/logo/ioa.png" alt="IOA"/></a>
+            <a href="https://indiaat75.nic.in/"><img class="orgLogo" src="media/logo/azadiMohotsav.png" alt="75-Aazadi-Mohotsav"/></a>
+        </div>
+        <div class="navBar">
+            <ul>
+                <a href="indoreHome.html"><li>HOME</li></a>
+                <a href="indb_Events.html"><li>NODAL - EVENTS</li></a>
+                <a href="indb_Affiliation.html"><li>NODAL - AFFILIATED INSTITUTES</li></a>
+                <a href="indb_Dashboard.html"><li>NODAL OFFICER</li></a>
+            </ul>
+        </div> 
+
+
+<div class="content">
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel-slide" style="background: url(media/sports/basketball2.jpg) center/cover no-repeat;">
+            <div class="carousel-content">
+                <h1><span style="color: brown;">Inter-City</span><br> Basketball Tournament </h1>
+                <h2 style="font-family: 'Yatra One', system-ui;">Welcome to Inter-City</h2>
+                <p>Rhythm of Excellence, Spirit of Competition</p>
+            </div>
+        </div>
+        <div class="carousel-slide" style="background: url(media/sports/basketball2.jpg) center/cover no-repeat;">
+            <div class="carousel-content">
+                <h1><span style="color: brown;font-family:'Yatra One', system-ui; font-weight: 900; ">इंटर-सिटी</span><br> Basketball Tournament</h1>
+                <h2 style="font-family: 'Yatra One', system-ui;">Welcome to इंटर-सिटी</h2>
+                <p>Where champions are born and legends are made</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Description Section -->
+    <div class="event-description">
+        <h2>Registered Teams</h2>
+        <table>
+            <thead>
+                <th>College ID</th>
+                <th>Player Name</th>
+                <th>Sport</th>
+                <th>Category</th>
+                <th>Participants</th>
+                <th>Status</th>
+                <th>Check Details</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AITR2556</td>
+                    <td>Acropolis Institute of Technology & Research</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>12</td>
+                    <td>Done</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <tr>
+                    <td>CDGI7415</td>
+                    <td>Chameli Devi Group of Institutes</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>13</td>
+                    <td>Done</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <tr>
+                    <td>MIT8526N</td>
+                    <td>Malwa Institute of Technology</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>12</td>
+                    <td>Done</td>
+                    <td><button>View Details</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Event Sport Details Section -->
+    <div class="event-sport-details">
+        <h2>Acropolis Institute of Technology & Research</h2>
+        <table>
+            <thead>
+                <th>Player Name</th>
+                <th>Sport</th>
+                <th>Category</th>
+                <th>Aadhar Number</th>
+                <th>College ID</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jaspal Singh Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8526AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Balram Singh Rathod</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6689 2226 5554</td>
+                    <td>8563AITR7455</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Krishn Dev Parmar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8865 8745 8544</td>
+                    <td>9636AITR8565</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Ganpath Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8888 8854 9963</td>
+                    <td>8588AITR8526</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Bhairav Rawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4565 0021 8889</td>
+                    <td>1286AITR7885</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Nandi Singh</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6548 7546 9985</td>
+                    <td>1226AITR7485</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Brahmanand Sekhawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>5556 4526 8745</td>
+                    <td>7841AITR7745</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Ramchandra Singh Rathod</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9996 8856 1123</td>
+                    <td>8599AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Laxman Singh</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>85632 8889 7774</td>
+                    <td>8774AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Kartikeya Vikawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9514 4523 7854</td>
+                    <td>8786AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Parshuram Dev</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8595AITR74185</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Shiva Panwar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4521 9963 8954</td>
+                    <td>8574AITR74155</td>
+                    <td>Done</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="event-sport-details">
+        <h2>Chameli Devi Group of Institutes</h2>
+        <table>
+            <thead>
+                <th>Player Name</th>
+                <th>Sport</th>
+                <th>Category</th>
+                <th>Aadhar Number</th>
+                <th>College ID</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jaspal Singh Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8526AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Balram Singh Rathod</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6689 2226 5554</td>
+                    <td>8563AITR7455</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Krishn Dev Parmar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8865 8745 8544</td>
+                    <td>9636AITR8565</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Ganpath Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8888 8854 9963</td>
+                    <td>8588AITR8526</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Bhairav Rawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4565 0021 8889</td>
+                    <td>1286AITR7885</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Nandi Singh</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6548 7546 9985</td>
+                    <td>1226AITR7485</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Brahmanand Sekhawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>5556 4526 8745</td>
+                    <td>7841AITR7745</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Ramchandra Singh Rathod</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9996 8856 1123</td>
+                    <td>8599AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Laxman Singh</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>85632 8889 7774</td>
+                    <td>8774AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Kartikeya Vikawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9514 4523 7854</td>
+                    <td>8786AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Parshuram Dev</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8595AITR74185</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Shiva Panwar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4521 9963 8954</td>
+                    <td>8574AITR74155</td>
+                    <td>Done</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="event-sport-details">
+        <h2>Malwa Institute of Technology</h2>
+        <table>
+            <thead>
+                <th>Player Name</th>
+                <th>Sport</th>
+                <th>Category</th>
+                <th>Aadhar Number</th>
+                <th>College ID</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Abhayraj Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8526AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Baldev Singh Rathod</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6689 2226 5554</td>
+                    <td>8563AITR7455</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Sankar Singh Parmar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8865 8745 8544</td>
+                    <td>9636AITR8565</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Jaidev Rajput</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>8888 8854 9963</td>
+                    <td>8588AITR8526</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Veer Bhadra Rawat</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4565 0021 8889</td>
+                    <td>1286AITR7885</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Prithviraj Singh Chouhan</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>6548 7546 9985</td>
+                    <td>1226AITR7485</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Shivaji Maharaj</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>5556 4526 8745</td>
+                    <td>7841AITR7745</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Sher Singh Rana</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9996 8856 1123</td>
+                    <td>8599AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Paan Singh Tomar</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>85632 8889 7774</td>
+                    <td>8774AITR7477</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Jay Singh</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>9514 4523 7854</td>
+                    <td>8786AITR7415</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Krishna Dev Raya</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>7415 8526 7414</td>
+                    <td>8595AITR74185</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Maharana Sisodiya</td>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>4521 9963 8954</td>
+                    <td>8574AITR74155</td>
+                    <td>Done</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RGPV SportsConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script src="events-section/script.js"></script>
+</body>
+</html>

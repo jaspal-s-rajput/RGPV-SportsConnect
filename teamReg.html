@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
+    <link rel="icon" href="media/rgpv.ico">
+    <title>RGPV - SportsConnect | Register</title>
+    <link rel="stylesheet" href="header.css"> <!-- Combined CSS -->
+    <link rel="stylesheet" href="css/teamReg.css">
+</head>
+
+<body>
+    <!-- Header with Logo -->
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="topRgpv" href="https://www.rgpv.ac.in/Index.aspx"><h3  style="color:rgb(195, 0, 0); cursor:pointer; font-size: 20px; font-weight: 600;">RGPV |</h3></a>
+        <ul>
+            <a href="https://www.rgpv.ac.in/AboutRGTU/rgpv_collaboration.aspx"><li>Collaboration</li></a>
+            <a href="https://www.rgpv.ac.in/campus/rti17.pdf"><li>RTI</li></a>
+            <form>  
+                <select class="lang" name="lang">
+                    <option value="option1">English</option>
+                    <option value="option2">Hindi</option>
+                </select>
+            </form> 
+            <a href="login.html"><li class="signup">MyAccount</li></a>
+        </ul>
+    </div>
+    <div class="monoBar">
+        <a href="https://sportsauthorityofindia.nic.in/sai/"><img class="orgLogo" src="media/logo/saiLogo.png" alt="Sai-India"/></a>
+        <a href="https://kheloindia.gov.in/"><img class="orgLogo" src="media/logo/kheloIndia.png" alt="Khelo-India"/></a>
+        <a href="https://fitindia.gov.in/home"><img class="orgLogo" src="media/logo/fitInda.png" alt="Sai-India"/></a>
+        <a href="home.html"><img class="Logo" src="media/logo/spLogo.png" alt="RGPV - SPORTS CONNECT"/></a>
+        <a href="https://aiu.ac.in/"><img class="orgLogo" src="media/logo/Aiu.png" alt="AIU"/></a>
+        <a href="https://olympic.ind.in/"><img class="orgLogo" style="width: 110px;" src="media/logo/ioa.png" alt="IOA"/></a>
+        <a href="https://indiaat75.nic.in/"><img class="orgLogo" src="media/logo/azadiMohotsav.png" alt="75-Aazadi-Mohotsav"/></a>
+    </div>
+    <!-- <div class="navBar">
+        <ul>
+            <a href="home.html"><li>HOME</li></a>
+            <a href="discover.html"><li>DISCOVER</li></a>
+            <a href="sports.html"><li>SPORTS</li></a>
+            <a href="merit.html"><li>MERIT LIST</li></a>
+            <a href="events.html"><li>EVENTS</li></a>
+            <a href="contact.html"><li>CONTACT US</li></a>
+            <a href="aff_College.html"><li>AFFILIATED INSTITUTES</li></a>
+            <a href="archive.html"><li>ARCHIVE</li></a>
+            <a href="dashboard.html"><li>DASHBOARD</li></a>
+        </ul>
+    </div>  -->
+
+    <div class="content">
+        <!-- Left side: Motivational Quote -->
+        <div class="quote-section">
+            <h1>The difference between the impossible and the possible</h1>
+            <h2>lies in a man's determination.</h2>
+        </div>
+
+        <!-- Right side: Form Section -->
+        <!-- Right side: Form Section -->
+<div class="form-section">
+    <!-- Registration Form -->
+    <div id="registrationForm" style="display: block;">
+        <h2>Event Registration</h2>
+        <form action="SingleReg" method="post">
+            <label for="eventSelection">Event:</label>
+            <select id="eventSelection" name="eventSelection" onchange="toggleForm(event)" required>
+                <option value="">Select the Event</option>
+                <option value="Inter-City Tournament 2024">Inter-City Tournament 2024</option>
+            </select>
+
+            <label for="college">Select College:</label>
+            <select id="college" name="college" required>
+                <option value="">Select a college</option>
+                <option value="RGPV Bhopal">RGPV Bhopal</option>
+                <option value="Sagar Institute of Science and Technology">Sagar Institute of Science and Technology</option>
+                <option value="Lakshmi Narain College of Technology">Lakshmi Narain College of Technology</option>
+                <option value="Bansal Institute of Science and Technology">Bansal Institute of Science and Technology</option>
+                <option value="Indore Institute of Science and Technology">Indore Institute of Science and Technology</option>
+                <option value="Madhav Institute of Technology & Science">Madhav Institute of Technology & Science</option>
+                <option value="Shri Govindram Seksaria Institute of Technology and Scienc">Shri Govindram Seksaria Institute of Technology and Science</option>
+                <option value="Technocrats Institute of Technology">Technocrats Institute of Technology</option>
+                <option value="Jaypee University of Information Technology">Jaypee University of Information Technology</option>
+                <option value="Oriental Institute of Science and Technology">Oriental Institute of Science and Technology</option>
+            </select>
+
+            <label for="registrationType">Registration Type:</label>
+            <select id="registrationType" name="registrationType" onchange="toggleForm(event)" required>
+                <option value="">Select Registration Type</option>
+                <option value="single">Single Player</option>
+                        <option value="team">Team</option>
+            </select>
+
+            <div id="singlePlayerForm" style="display: none;">
+                <h3>Single Player Registration</h3>
+                <form id="singlePlayerRegistrationForm">
+                    <label for="singleSport">Sport</label>
+                    <select id="singleSport" name="singleSport" required>
+                        <option value="">--Select Sport--</option>
+                        <option value="Archery">Archery</option>
+                        <option value="Athletics">Athletics</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Boxing">Boxing</option>
+                        <option value="Chess">Chess</option>
+                        <option value="Swimming">Swimming</option>
+                        <option value="Table Tennis">Table Tennis</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Weightlifting">Weightlifting</option>
+                        <option value="Wrestling">Wrestling</option>
+                    </select>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                    <label for="aadharCard">Aadhar Card</label>
+                    <input type="tel" maxlength="12" name="aadharcard" minlength="12" pattern="[0-9]{12}" placeholder="Enter Aadhaar Number" required><br><br>
+
+                    <label for="collegeId">College ID</label>
+                    <input type="text" name="college_id" id="college_id" placeholder="Enter your college ID" required><br><br>
+
+                    <input type="submit" value="Register" class="btn btn-primary " >
+                </form>
+            </div>
+
+            <div id="teamForm" style="display: none;">
+                <h3>Team Registration</h3>
+                <form id="teamRegistrationForm" method="post" action="SingleReg">
+                    <label for="teamSport">Sport</label>
+                    <select id="teamSport" name="teamSport" required>
+                        <!-- List of sports  -->
+                        <option value="">--Select Sport--</option>
+                        <option value="Archery">Archery</option>
+                        <option value="Athletics">Athletics</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Basketball">Basketball</option>
+                        <option value="Boxing">Boxing</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Kabaddi">Kabaddi</option>
+                        <option value="Kho-Kho">Kho-Kho</option>
+                        <option value="Swimming">Swimming</option>
+                        <option value="Table Tennis">Table Tennis</option>
+                        <option value="Tennis">Tennis</option>
+                        <option value="Volleyball">Volleyball</option>
+                        <option value="Weightlifting">Weightlifting</option>
+                        <option value="Wrestling">Wrestling</option>
+                        <option value="Handball">Handball</option>
+                    </select>
+
+        <label for="teamId">College Afillation Number</label>
+        <input type="text" id="teamId" name="teamId" placeholder="Enter Team ID" required>
+
+        <label for="noOfPlayers">Number of Players</label>
+        <input type="number" id="noOfPlayers" name="noOfPlayers" placeholder="Enter number of players" required oninput="updatePlayerInputs()">
+
+        <div id="playerDetails" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;"></div> <!-- Grid layout for player inputs -->
+
+        <label for="coachName">Coach Name</label>
+        <input type="text" id="coachName" name="coachName" placeholder="Enter coach name" required>
+
+        <input type="submit" value="Register" class="btn btn-primary">
+    </form>
+</div>
+                                
+
+                   
+
+
+   <script>function toggleForm(event) {
+    const selectedEvent = document.getElementById('eventSelection').value;
+    const selectedRegistrationType = document.getElementById('registrationType').value;
+    const singlePlayerForm = document.getElementById('singlePlayerForm');
+    const teamForm = document.getElementById('teamForm');
+
+    // Only show the appropriate form if both event and registration type are selected
+    if (selectedEvent && selectedRegistrationType) {
+        if (selectedRegistrationType === 'single') {
+            singlePlayerForm.style.display = 'block';
+            teamForm.style.display = 'none';
+        } else if (selectedRegistrationType === 'team') {
+            singlePlayerForm.style.display = 'none';
+            teamForm.style.display = 'block';
+        }
+    } else {
+        singlePlayerForm.style.display = 'none';
+        teamForm.style.display = 'none';
+    }
+}
+
+document.getElementById('singlePlayerRegistrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+    const formData = new FormData(event.target);
+    // Example: Log data or send it via AJAX
+    console.log('Single Player Form Submitted');
+    formData.forEach((value, key) => {
+        console.log(key, value);
+    });
+    // You can also send the form data to the server via fetch, axios, etc.
+});
+
+document.getElementById('teamRegistrationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form from submitting normally
+    const formData = new FormData(event.target);
+    // Example: Log data or send it via AJAX
+    console.log('Team Form Submitted');
+    formData.forEach((value, key) => {
+        console.log(key, value);
+    });
+    // You can also send the form data to the server via fetch, axios, etc.
+});
+
+function toggleForm(event) {
+    const selectedEvent = document.getElementById('eventSelection').value;
+    const selectedRegistrationType = document.getElementById('registrationType').value;
+    const singlePlayerForm = document.getElementById('singlePlayerForm');
+    const teamForm = document.getElementById('teamForm');
+
+    // Only show the appropriate form if both event and registration type are selected
+    if (selectedEvent && selectedRegistrationType) {
+        if (selectedRegistrationType === 'single') {
+            singlePlayerForm.style.display = 'block';
+            teamForm.style.display = 'none';
+        } else if (selectedRegistrationType === 'team') {
+            singlePlayerForm.style.display = 'none';
+            teamForm.style.display = 'block';
+        }
+    } else {
+        singlePlayerForm.style.display = 'none';
+        teamForm.style.display = 'none';
+    }
+}
+
+// Function to handle dynamic player inputs
+function updatePlayerInputs() {
+    const numPlayers = document.getElementById('noOfPlayers').value;
+    const playerDetailsContainer = document.getElementById('playerDetails');
+
+    // Clear previous inputs
+    playerDetailsContainer.innerHTML = '';
+
+    // Generate inputs based on the number of players
+    for (let i = 1; i <= numPlayers; i++) {
+        const playerDiv = document.createElement('div');
+        playerDiv.classList.add('player-input');
+        playerDiv.style.marginBottom = '20px'; // Space between each player block
+        playerDiv.style.display = 'flex';
+        playerDiv.style.flexDirection = 'column'; // Stack inputs vertically
+
+        // Player Name Input
+        const nameLabel = document.createElement('label');
+        nameLabel.textContent = `Player ${i} Name:`;
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.name = `namePlayer${i}`;
+        nameInput.placeholder = `Enter Player ${i} Name`;
+        nameInput.required = true;
+
+        // Aadhaar Number Input
+        const aadhaarLabel = document.createElement('label');
+        aadhaarLabel.textContent = `Player ${i} Aadhaar Number:`;
+        const aadhaarInput = document.createElement('input');
+        aadhaarInput.type = 'tel';
+        aadhaarInput.name = `aadhaarPlayer${i}`;
+        aadhaarInput.placeholder = `Aadhaar Player ${i}`;
+        aadhaarInput.maxLength = 12;
+        aadhaarInput.minLength = 12;
+        aadhaarInput.pattern = '[0-9]{12}';
+        aadhaarInput.required = true;
+
+        // College ID Input
+        const collegeIdLabel = document.createElement('label');
+        collegeIdLabel.textContent = `Player ${i} College ID:`;
+        const collegeIdInput = document.createElement('input');
+        collegeIdInput.type = 'text';
+        collegeIdInput.name = `collegeIdPlayer${i}`;
+        collegeIdInput.placeholder = `College ID Player ${i}`;
+        collegeIdInput.required = true;
+
+        // Append the inputs to the player block
+        playerDiv.appendChild(nameLabel);
+        playerDiv.appendChild(nameInput);
+        playerDiv.appendChild(aadhaarLabel);
+        playerDiv.appendChild(aadhaarInput);
+        playerDiv.appendChild(collegeIdLabel);
+        playerDiv.appendChild(collegeIdInput);
+
+        // Append the player block to the container
+        playerDetailsContainer.appendChild(playerDiv);
+    }
+}
+
+
+
+</script>
+
+    
+</body>
+
+</html>

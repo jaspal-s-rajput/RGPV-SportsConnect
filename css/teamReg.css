@@ -1,0 +1,179 @@
+/* General body styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../media/bgs/unity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+/* Header/logo section */
+.header {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    height: 50px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Center items vertically */
+}
+
+.header .logo {
+    height: 50px;
+    width: 150px;
+}
+
+.header .home-icon {
+    margin-left: auto; /* Push home icon to the right */
+    padding: 10px; /* Add some padding */
+}
+
+.header .icon {
+    height: 30px; /* Set height for home icon */
+    width: 30px; /* Set width for home icon */
+}
+/* Content styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    padding: 40px;
+    
+}
+
+/* Left side: Motivational quote */
+.quote-section {
+    width: 40%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    color: rgb(208, 225, 239);
+
+}
+
+.quote-section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+}
+.quote-section h2 {
+    color: red;
+    font-size: 60px;
+}
+
+/* Right side: Form styling */
+.form-section {
+    background-color: rgba(0, 0, 0, 0.814); /* Set form background color */
+    color: white; /* Set text color */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.753);
+    width: 50%; /* Set width for the form section */
+    margin-left: 10%;
+    font-weight: 800;
+}
+.form-section h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 2px rgba(255, 255, 255, 0.622) solid ;
+    text-shadow: 0px 0px 5px white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+/* Form toggle button styling */
+.form-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form-toggle button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: white; /* Input background color */
+    color: black; /* Input text color */
+}
+
+/* Adjustments for the textarea */
+textarea {
+    resize: none; /* Prevent textarea resizing */
+    height: 100px; /* Fixed height for textarea */
+    align-self: stretch; /* Allow textarea to stretch to full width */
+}
+
+/* Specific adjustments for document verification input */
+input[type="file"] {
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Keep border consistent */
+}
+
+/* Form button alignment */
+button {
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: auto; /* Push button to the bottom */
+    align-self: center; /* Center the button */
+}
+
+/* Links and Button Visibility */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

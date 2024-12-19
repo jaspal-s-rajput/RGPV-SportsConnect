@@ -1,0 +1,229 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+
+/* College Logo */
+.college-logo {
+    height: 40px; /* Set a fixed height for the college logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Push the main logo to center */
+}
+
+/* Container for Main Logo */
+.logo-container {
+    flex: 1; /* Allow this container to take available space */
+    display: flex;
+    justify-content: center; /* Center the main logo horizontally */
+}
+
+/* Main Logo */
+.main-logo {
+    height: 80px; /* Set a fixed height for the main logo */
+    width: 250px; /* Maintain aspect ratio */
+}
+
+/* Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Ensure it pushes to the right */
+}
+
+.header .home-icon {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}.header .home-icon:hover{text-shadow: 0px 0px 5px aliceblue;}
+
+.header .home-icon .icon {
+    margin-right: 5px;
+}
+
+.header .logout-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}.header .logout-btn:hover{
+    background-color: white;
+    color: rgb(127, 7, 7);
+    box-shadow: 0px 0px 5px white;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.stat-box {
+    background-color: #333;
+    border: 1px solid #444; /* Border for dark look */
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%; /* Adjust width for four items in one row */
+    text-align: center;
+    color: #f0f0f0; /* Light text */
+}
+
+.stat-box h3 {
+    font-size: 18px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00; /* Green color for numbers */
+}
+
+/* Participation List */
+.participation-list {
+    margin: 20px;
+    background-color: #222; /* Darker background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.participation-list h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.participation-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.participation-list table th,
+.participation-list table td {
+    border: 1px solid #444; /* Dark border */
+    padding: 10px;
+    text-align: center;
+    color: #f0f0f0; /* Light text color */
+}
+
+.participation-list table th {
+    background-color: #333; /* Dark header */
+}
+
+/* Actions Section */
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.actions .export-btn,
+.actions .report-btn {
+    padding: 10px 20px;
+    background-color: #444; /* Dark button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.actions .export-btn:hover,
+.actions .report-btn:hover {
+    background-color: #555; /* Slight hover effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .header .college-logo,
+    .header .main-logo {
+        height: 40px; /* Smaller logos on medium screens */
+    }
+
+    .header .home-icon,
+    .header .logout-btn {
+        font-size: 18px; /* Slightly smaller text */
+        margin-right: 10px; /* Reduce margin */
+    }
+
+    .header-right {
+        margin-left: auto; /* Ensure it stays on the right */
+    }
+
+    .stat-box {
+        width: 45%; /* Adjust width for two items in a row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center all items */
+    }
+
+    .college-logo,
+    .main-logo {
+        height: 40px; /* Smaller logos on mobile */
+    }
+
+    .header-right {
+        margin-top: 10px; /* Space above right section */
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center navigation items */
+    }
+
+    .header .home-icon,
+    .header .logout-btn {
+        font-size: 16px; /* Even smaller text */
+        margin: 5px 0; /* Vertical margin for buttons */
+    }
+
+    .stat-box {
+        width: 100%; /* Full width for single column layout on small screens */
+        margin-bottom: 10px; /* Add some space between boxes */
+    }
+
+    .actions {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+    }
+
+    .actions .export-btn,
+    .actions .report-btn {
+        width: 100%; /* Full width for buttons on small screens */
+        margin: 5px 0; /* Vertical margin for buttons */
+    }
+}

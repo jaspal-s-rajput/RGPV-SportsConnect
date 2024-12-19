@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/rgpv.ico">
+    <title>RGPV - SportsConnect | Dashboard</title>
+    <link rel="stylesheet" href="dash.css"> <!-- Link to Dark Theme CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for Home Icon -->
+    <link rel="stylesheet" href="header.css" >
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Dashboard Header -->
+    <div class="header">
+        <img src="media/colleges/rustamji-college.webp" alt="College Logo" class="college-logo"> <!-- College Logo -->
+        <div class="logo-container"> <!-- Container for the main logo -->
+            <img src="media/logo/spLogo.png" alt="Main Logo" class="main-logo"> <!-- Main Logo -->
+        </div>
+        <div class="header-right">
+            <a href="admin.html" class="home-icon">
+                <i class="fas fa-home icon"></i>
+                <span>Home</span>
+            </a>
+            <a href="logout.html" class="logout-btn">Logout</a>
+        </div>
+    </div>
+    <div class="navBar">
+        <ul>
+            <a href="admin.html"><li>HOME</li></a>
+          
+            <a href="enents.html"><li>EVENTS</li></a>
+            <a href="affilated.html"><li>AFFILIATED INSTITUTES</li></a>
+            <a href="adminprofile.html"><li>PROFILE</li></a>
+        </ul>
+    </div>   
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h2>   Mahakal Institute of Technology & Management </h2>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="stats">
+        <div class="stat-box">
+            <h3>Total Games Participated</h3>
+            <p id="totalGames">5</p>
+        </div>
+        <div class="stat-box">
+            <h3>Single Registrations</h3>
+            <p id="singleRegistrations">1</p>
+        </div>
+        <div class="stat-box">
+            <h3>Team Registrations</h3>
+            <p id="teamRegistrations">4</p>
+        </div>
+        <div class="stat-box">
+            <h3>Total Players</h3> <!-- New field for Total Players -->
+            <p id="totalPlayers">47</p> <!-- Placeholder value -->
+        </div>
+    </div>
+
+    <!-- Sports Participation List -->
+    <div class="participation-list">
+        <h3>Sports Participation</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sport</th>
+                    <th>Category</th>
+                    <th>Participants</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basketball</td>
+                    <td>Team</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Chess</td>
+                    <td>Single</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Cricket</td>
+                    <td>Team</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Football</td>
+                    <td>Team</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Handball</td>
+                    <td>Team</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Export Data & Reports -->
+    <div class="actions">
+        <a href="studentdata.html"><button class="export-btn">Get Student Data</button></a>
+        <button class="export-btn">Export Data (CSV)</button>
+        <button class="report-btn">View Detailed Report</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RGPV SportsConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

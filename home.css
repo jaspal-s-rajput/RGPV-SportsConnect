@@ -1,0 +1,245 @@
+/* General Styles */
+* {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* CARAOUSEL */
+ #carouselExampleCaptions {
+    height: 600px;
+  }
+
+  #carouselExampleCaptions .carousel-item img {
+    height: 600px;
+    object-fit: cover; 
+  }
+  .carousel-caption h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 90px;
+        text-align: left;
+        text-shadow: #000 0px 0px 30px;    
+  }
+  .carousel-caption p{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: #000 0px 0px 30px;
+  }
+
+  /* MEDALS */
+
+  .medal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-image: url(media/bgs/grey-pattern.jpg);
+  }
+  .medal-one{
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+  }
+  .medal-one h2{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+  }
+  .medal-one span{
+    background-color: #333;
+    color: #d7d7d7;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+  }.medal-one span:hover{
+    color: #140f22;
+    background-color: #a5a4a8;
+    transition: 1s;
+  }
+  .medal-one a{
+    text-decoration: none;
+  }
+
+    table {
+        width: 800px;
+        margin: 3px auto;
+        border-collapse: collapse;
+        max-height: 400px;
+        overflow-y: scroll;
+        border-radius:50px;  
+        
+    }
+
+    thead th {
+        background-color: #140f22;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+
+    }
+    
+    tbody tr:nth-child(odd) {
+        background-color: #c1c0c4;
+        
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #a5a4a8;
+    }
+
+    tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; 
+        text-decoration: none; 
+    }
+
+    .flag {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .medal-count{
+        text-align: center;
+    }
+    /* Styling scrollbar */
+    .table-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
+        background-color: #2e1c5c;
+        border-radius: 5px;
+    }
+
+    .table-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+
+/* QUOTE */
+.quote{
+    align-items: center;
+    padding: 30px;
+    background-color: #000;
+    background-image: url(media/bgs/star-black.jpg);
+    /* background-position: top; */
+    /* background-repeat: no-repeat; */
+    background-size: 40%;
+    color: #ddd;
+    text-align: center;
+}
+.quote h3{
+    font-family:'Yatra One', system-ui;
+}
+.quote p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.quote-border{
+    padding: 30px 0 0 30px;
+    border-radius: 5px;
+    align-items: center;
+    border: 2px white solid;
+}
+.quote:hover .quote-border{
+    text-shadow: 0 0 5px white;
+    transition: 1s;
+}
+
+
+/* ABOUT_GALERY */
+.about-gallery{
+    background-image: url(media/bgs/whiteGreyMarble.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ABOUT */
+.about{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.about h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+}
+.about p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+.about img{
+    width: 700px;
+    -webkit-mask-image: linear-gradient(to left, black 45% , transparent 95%);
+}
+.about a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+}.about a:hover{
+    background-color: #a5a4a8;
+    color: #000;
+    transition: 1s;
+}
+
+/* GALLERY */
+.gallery{
+    padding: 15px 30px 30px 30px;
+}
+.gallery h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+.gallery .carousel-image {
+    height: 300px;
+    object-fit: cover; 
+  }
+
+/* SUBSCRIBE */
+.subscribe{
+    display: flex;
+    color: rgb(184, 187, 187);
+    background-color: #000;
+}
+.subscribe img{
+    height: 370px;
+    -webkit-mask-image: linear-gradient(to right, black 60% , transparent 110%);
+
+}
+.subscribe div{
+    margin: 20px 30px 20px 0px;
+}
+.subscribe div h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.subscribe div p{
+    font-weight: 500;
+}
+
+

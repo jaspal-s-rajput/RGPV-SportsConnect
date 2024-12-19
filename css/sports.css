@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #f8f8ff;
+    padding: 0; /* Remove padding from body */
+    margin: 0; /* Remove margin from body */
+}
+
+.topiic{
+    display: flex;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    background-size: cover;
+    color: rgb(219, 221, 223);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+}.cards .topiic h1{
+        font-size: 40px;
+        padding: 15px 0px 0px 70px;
+        text-shadow: 0px 0px 70px black;
+    }
+
+#sports{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Space between cards */
+    gap: 30px; /* Gap between cards */
+     /* Reduce side padding (left and right) */
+     padding: 30px 9px 30px 9px;
+     background-image: url(../media/bgs/sunset-ocean.jpg); 
+     background-size: cover;
+}
+
+.card {
+    width: 22%; /* Set width to 24% to fit 4 cards snugly */
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px solid #FFF;
+    position: relative;
+    box-shadow: 0px 0px 35px rgb(0, 0, 0);
+    margin: 10px 0; /* Reduce top and bottom margin */
+}.card:hover{
+    box-shadow: 0px 0px 15px aliceblue;
+    transition: 0.5s ease-in-out;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card {
+    position: relative; /* Ensure the card is positioned relative to contain the absolutely positioned text */
+}
+
+.image-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white; /* Text color for visibility */
+    font-size: 24px; /* Adjust text size */
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 0px 10px black; /* Optional: Add shadow for better visibility */
+    z-index: 1; /* Make sure it's above the image */
+    pointer-events: none; /* Make the text non-clickable, so the card hover effect works normally */
+    transition: opacity 0.6s ease-in-out; /* Smooth transition for disappearing */
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0; /* Ensure the image stays below the text */
+}
+
+.card:hover .image-text {
+    opacity: 0; /* Make the text disappear when the card is hovered */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0; /* Ensure the image stays below the text */
+}
+
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    bottom: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    text-shadow: 0px 0px 10px black;
+}
+
+.card:hover .card-body {
+    bottom: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn {
+    color: #1f3d47;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .card {
+        width: 30%; /* Fit 3 cards per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 45%; /* Fit 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Fit 1 card per row */
+    }
+}

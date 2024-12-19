@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dadada;
+    color: #333;
+}
+
+.container {
+    background-image: url(../media/bgs/night-court.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 30px 30px;
+    height: 600px;
+}
+
+.page-title {
+    text-align: left;
+    margin-bottom: 30px;
+    color: #cdc9c9;
+    font-size: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+
+/* Tab Menu */
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    /* background-color: #1a73e8; */
+    background-color: brown;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover, .tab-link.active {
+    /* background-color: #0c5cb8; */
+    background-color: aliceblue;
+    color: brown;
+    font-size: 18px;
+    box-shadow:0 0 10px white   ;
+}
+
+/* Event Sections */
+.event-section {
+    display: none;
+    padding: 20px 40px;
+    background-color: #000000d9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.421);
+}
+
+.event-section h2 {
+    margin-bottom: 20px;
+    color: lightgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    border-bottom: 4px solid rgba(211, 211, 211, 0.401);
+    padding-bottom: 5px;
+}
+
+.event-block {
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #292929;
+    border-left: 4px solid brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.event-name {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: lightgray;
+    
+}
+
+.event-block p {
+    margin: 10px 10px;
+    color: lightgray;
+}
+
+.tag {
+    background-color: brown;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.tag:hover {
+    background-color: #0c5cb8;
+    cursor: pointer;
+}

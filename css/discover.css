@@ -1,0 +1,93 @@
+.about-vision{
+    background-image: url(../media/bgs/whiteGreyMarble.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 30px;
+}
+.about{
+    display: flex;
+    
+}
+.about .about-content h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-shadow: 0px 0px 5px aliceblue;
+}
+.about .about-content p{
+    text-align: justify;
+    color: black;
+    font-size: 17.5px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about img{
+    height: 500px;
+    -webkit-mask-image: linear-gradient(to left, black 45% , transparent 95%);
+}
+
+.vision{
+    background-image: url(../media/bgs/blackCloth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 30px 0px;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 40px 50px ;
+    /* text-align: justify; */
+}.vision:hover h2{
+    text-shadow: 0px 0px 5px white;
+    transition: 1s ease-in-out;
+}
+.vision h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    text-align: left;
+}
+.vision p{
+    text-align: justify;
+    font-weight: 700;
+}
+
+.approach{
+    display: flex;
+    background-image: url(../media/bgs/arcReactor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.approach h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    text-shadow: 0px 0px 100px white;
+}
+
+.approach .app-card{
+    color: black;
+    background-color: rgba(240, 248, 255, 0.64);
+    height: fit-content;
+    padding: 15px 30px 0px 10px;
+    margin-left: 60px;   
+    border-radius: 12px; 
+    -webkit-mask-image: 
+    linear-gradient(to right, black 20%, transparent 70%), /* Left fade */
+    linear-gradient(to left, black 20%, transparent 70%); /* Right fade */
+    -webkit-mask-size: 100% 100%;    
+
+}
+.approach .app-card ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    list-style: square;
+    padding: 12px 12px;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+}.approach .app-card ul li:hover{
+    text-shadow: 0px 0px 20px black;
+    transition: 0.2s;
+}

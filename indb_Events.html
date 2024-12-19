@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BootStrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <!-- BootStrap -->
+    <link rel="icon" href="media/rgpv.ico">
+    <title>RGPV - SC INDB | Events</title>
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+        <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="topRgpv" href="https://www.rgpv.ac.in/Index.aspx"><h3  style="color:rgb(195, 0, 0); cursor:pointer; font-size: 20px; font-weight: 600;">RGPV |</h3></a>
+        <ul>
+            <a href="https://www.rgpv.ac.in/AboutRGTU/rgpv_collaboration.aspx"><li>Collaboration</li></a>
+            <a href="https://www.rgpv.ac.in/campus/rti17.pdf"><li>RTI</li></a>
+             <form>  
+              <select class="lang" name="lang">
+                  <option value="option1">English</option>
+                  <option value="option2">Hindi</option>
+              </select>
+            </form> 
+            <a href="indb_Dashboard.html"><li class="signup">Indore Nodal</li></a>
+        </ul>
+    </div>
+    <div class="monoBar">
+        <a href="https://sportsauthorityofindia.nic.in/sai/"><img class="orgLogo" src="media/logo/saiLogo.png" alt="Sai-India"/></a>
+        <a href="https://kheloindia.gov.in/"><img class="orgLogo" src="media/logo/kheloIndia.png" alt="Khelo-India"/></a>
+        <a href="https://fitindia.gov.in/home"><img class="orgLogo" src="media/logo/fitInda.png" alt="Sai-India"/></a>
+        <a href="indoreHome.html"><img class="Logo" src="media/logo/spLogo.png" alt="RGPV - SPORTS CONNECT"/></a>
+        <a href="https://aiu.ac.in/"><img class="orgLogo" src="media/logo/Aiu.png" alt="AIU"/></a>
+        <a href="https://olympic.ind.in/"><img class="orgLogo" style="width: 110px;" src="media/logo/ioa.png" alt="IOA"/></a>
+        <a href="https://indiaat75.nic.in/"><img class="orgLogo" src="media/logo/azadiMohotsav.png" alt="75-Aazadi-Mohotsav"/></a>
+    </div>
+    <div class="navBar">
+        <ul>
+            <a href="indoreHome.html"><li>HOME</li></a>
+            <a href="indb_Events.html"><li>NODAL - EVENTS</li></a>
+            <a href="indb_Affiliation.html"><li>NODAL - AFFILIATED INSTITUTES</li></a>
+            <a href="indb_Dashboard.html"><li>NODAL OFFICER</li></a>
+        </ul>
+    </div>  
+
+    <!-- MAIN Events -->
+    <div class="container">
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+
+            <h1 class="page-title">INDORE NODAL - EVENTS</h1>
+
+            <!-- Navigation Tabs -->
+            <div class="tab-menu">
+                <button class="tab-link" onclick="openSection('upcoming')" id="defaultOpen">Upcoming Events</button>
+            </div>
+
+        </div>
+        
+
+        <!-- Upcoming Events Section -->
+         
+        <section id="upcoming" class="event-section">
+                <h2><span style="color: brown;">Upcoming</span> <u>Events</u></h2>
+                <a href="intercity.html" style="text-decoration: none;">
+                <div class="event-block">
+                    <h3 class="event-name">Inter-City Basketball Tournament 2024</h3>
+                    <p><strong>Organizer:</strong> Acropolis Institute of Technology & Research</p>
+                    <p><strong>Address:</strong> AITR Sports Complex</p>
+                    <p><strong>Last Date for Registration:</strong> December 29, 2024</p>
+                    <p><strong>Registrations Done:</strong> 5</p>
+                    <p><strong>Tags:</strong> <span class="tag">Basketball</span></p>
+                </div>
+                </a>
+            <!-- Additional upcoming events can be added here -->
+        </section>
+
+        
+    
+    <script src="script/events.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 RGPV SportsConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

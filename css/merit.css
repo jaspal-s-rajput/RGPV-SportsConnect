@@ -1,0 +1,180 @@
+/* MEDALS */
+
+.medal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-image: url(../media/bgs/neon-staduium-side.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .medal-one{
+    width: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+  }
+  .medal-one h2{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 74px;
+    font-weight: 900;
+    color: #ddd;
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .medal-one p{
+    color: #ddd;
+  }
+
+    table {
+        width: 800px;
+        margin: 3px auto;
+        border-collapse: collapse;
+        max-height: 400px;
+        overflow-y: scroll;
+         
+        box-shadow: #140f22 10px 15px 20px ; 
+        
+    }
+
+    thead th {
+        background-color: #140f22;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #c1c0c4a6;
+        font-weight: 700;
+        
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #a5a4a8f1;
+        font-weight: 700;
+        
+    }
+
+    tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd; 
+        text-decoration: none; 
+    }
+
+    .flag {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .medal-count{
+        text-align: center;
+    }
+    /* Styling scrollbar */
+    .table-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
+        background-color: #2e1c5c;
+        border-radius: 5px;
+    }
+
+    .table-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    /* QUOTE */
+    .quote{
+        background-color: #000000;
+        color: #ddd;
+        font-weight: 900;
+        font-family: "Yatra One", system-ui;
+        padding: 30px 30px 20px 30px;
+        text-align: center;
+    }.quote:hover{text-shadow: 0px 0px 3px white; transition: 1s;}
+
+    #main-merit{
+        background-image: url(../media/bgs/grey-pattern.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* BoysPlayer */
+    .boy-merit{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    }
+    .boy-merit .boy-merit-para{
+        width: 35%;
+    }
+
+    .boy-merit .boy-merit-para h2{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+    }
+    .boy-merit .boy-merit-para p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #merit-boy-table{
+        font-size: 14px;
+        width: fit-content;
+        
+    }
+
+    /* POPUP */
+       /* Style for the table and images */
+       .flag {
+        cursor: pointer;
+    }
+
+    /* Popup container styling */
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.674);
+        
+    }
+
+    /* Popup image styling */
+    .popup-content {
+        position: relative;
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #0000008b;
+        border-radius: 10px;
+        padding: 60px 25px;
+        box-shadow: 0px 0px 200px whitesmoke;
+    }
+
+
+    /* Close button styling */
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
